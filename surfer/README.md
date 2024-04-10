@@ -19,6 +19,8 @@ PORT   STATE SERVICE
 Nmap done: 1 IP address (1 host up) scanned in 43.30 seconds
 ```
 
+## Web Application Assessment
+
 We have a web server on port 80. the website shows us a login panel.
 
 ![login](./images/login.png)
@@ -36,6 +38,8 @@ On the same dashboard page we find the functionality to export a report to pdf.
 ![export-to-pdf](./images/export-to-pdf.png)
 
 In the exported pdf we see how a local call is made to http://127.0.0.1/server-info.php.
+
+## BurpSuite Interception
 
 ![pdf-info](./images/pdf-info.png)
 
