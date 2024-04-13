@@ -30,11 +30,11 @@ Repdf.pdf.1                100%[======================================>] 100.41K
 2024-04-12 23:19:47 (176 KB/s) - ‘Repdf.pdf.1’ saved [102818/102818]
 ```
 
-The PDF has a covered QR code, we need some way to separete that warning notice.
+The PDF has a covered QR code, we need some way to separate that warning notice.
 
 ![pdf](./images/pdf.png)
 
-Using **binwalk** we found some things, but nothinf interesting.
+Using **binwalk** we found some things, but nothing interesting.
 
 ```shell
 $ binwalk Repdf.pdf
@@ -52,7 +52,7 @@ DECIMAL       HEXADECIMAL     DESCRIPTION
 
 > If you want to extract the files, use: `binwalk -e Repdf.pdf -C output`
 
-Now we use **pdfimages** to to extract all images.
+Now we use **pdfimages** to extract all images.
 
 ```shell
 $ pdfimages -all Repdf.pdf image
