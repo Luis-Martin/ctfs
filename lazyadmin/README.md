@@ -1,4 +1,4 @@
-# LazyAdmin
+# [LazyAdmin][https://tryhackme.com/r/room/lazyadmin]
 
 ## Enumeration
 
