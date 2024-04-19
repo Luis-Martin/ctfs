@@ -56,6 +56,8 @@ Finished
 ===============================================================
 ```
 
+## Web Application Analysis
+
 We found the *test* and *wordpress* directories.
 
 Checking we found that te test is only a static page, we will analyze the worpress later.
@@ -122,6 +124,8 @@ We find a login in the panel directory and trying with the credentials found we 
 
 ![subrion-panel](./images/subrion-panel.png)
 
+## Exploitation
+
 Since we can see the version of the CMS below we will check for explioits.
 
 ![subrion-dashboard](./images/subrion-dashboard.png)
@@ -174,6 +178,8 @@ $ cat /etc/passwd | grep -P "sh$"
 root:x:0:0:root:/root:/bin/bash
 scamsite:x:1000:1000:scammer,,,:/home/scamsite:/bin/bash
 ```
+
+## Privilege Escalation
 
 Most likely we need to go to the scamsite user first and then get to root.
 
