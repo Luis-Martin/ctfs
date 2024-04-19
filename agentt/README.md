@@ -61,6 +61,8 @@ File Type: Python script, ASCII text executable
 Copied EDB-ID #49933's path to the clipboard
 ```
 
+## Vulnerability Exploitation
+
 We find a Remote Code Execution, and if we analyze the code in *https://www.exploit-db.com/exploits/49933* we see that it only adds a header *User-Agentt*.
 
 We try with burpsuit and see that we manage to execute commands.
